@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0C2B24">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>Entrar — PRECEPTA</title></head>
+<body class="auth-body">
+<header class="auth-header"><a href="index.html"><img src="assets/precepta-logo-canonical.jpg" alt="PRECEPTA"></a><a href="cadastro.html">Ainda não tenho conta →</a></header>
+<main class="auth-layout">
+  <section class="auth-art">
+    <img src="assets/sofia.jpg" alt="Dra. Sofia">
+    <div class="auth-art-copy"><span class="kicker light-kicker">BEM-VINDO DE VOLTA</span><h1>Continue de onde sua trajetória parou.</h1><p>Casos, debriefs, prioridades e próximas práticas permanecem conectados ao seu desenvolvimento.</p></div>
+  </section>
+  <section class="auth-form-wrap">
+    <div class="auth-form">
+      <span class="kicker">ACESSO</span>
+      <h2>Entrar no PRECEPTA</h2>
+      <p class="form-intro">Use seu e-mail e senha para continuar.</p>
+      <form onsubmit="event.preventDefault(); demoNotice('Login de demonstração');">
+        <label>E-mail<input type="email" placeholder="voce@exemplo.com" required></label>
+        <label>Senha<div class="password-wrap"><input id="login-password" type="password" placeholder="Sua senha" required><button type="button" class="show-pass" data-target="login-password">Mostrar</button></div></label>
+        <div class="form-row"><label class="check"><input type="checkbox"> Manter conectado</label><a href="#">Esqueci minha senha</a></div>
+        <button class="button full" type="submit">Entrar</button>
+      </form>
+      <div class="form-divider"><span>ou</span></div>
+      <button class="social-button" type="button" onclick="demoNotice('Login Google de demonstração')">Continuar com Google</button>
+      <p class="auth-foot">Não tem conta? <a href="cadastro.html">Criar conta</a></p>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script></body></html>
